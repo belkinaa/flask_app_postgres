@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+   {% include 'header.html' %}
+
+   {% block body %}{% endblock %}
+   <div>информация ПОСЛЕ блока базового шаблона НА СТАРТОВОЙ СТРАНИЦЕ</div>
+
+   <div>Тело СТАРТОВОЙ СТРАНИЦЫ</div>
+
+   {% include 'footer.html' %}
+</body>
+</html>
