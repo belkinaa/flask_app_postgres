@@ -1,6 +1,6 @@
-from flask_app import app
+from flask_app import APP
 
 
-@app.route("/")
+@APP.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
